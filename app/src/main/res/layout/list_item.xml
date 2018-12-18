@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="88dp">
+
+    <ImageView
+        android:id="@+id/row_image"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:background="@color/tan_background" />
+
+    <LinearLayout
+        android:id="@+id/translationContainer"
+        android:layout_toRightOf="@id/row_image"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:id="@+id/punjabi"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="punjabi" />
+
+        <TextView
+            android:id="@+id/english"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            tools:text="english" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/audio_icon"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_play_arrow"
+        />
+
+</RelativeLayout>
